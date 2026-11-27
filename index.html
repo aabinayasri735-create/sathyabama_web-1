@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Student Registration</title>
+    <script src="./script.js"  defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<img class="logo" src="./images.jpg" alt="Sathyabama Institute of Science and Technology logo">
+<h2>Student Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+<div id="loginSection">
+Username:
+<input type="text" id="username" required>
+<br><br>
+
+Password:
+<input type="password" id="password" required>
+<br><br>
+
+<input type="button" value="Submit" onclick="validateLogin()">
+<br><br>
+</div>
+
+<div id="registrationDetails" hidden>
+Student Name:
+<input type="text" id="studentName" required>
+<br><br>
+
+Email:
+<input type="email" required>
+<br><br>
+
+Age:
+<input type="number" id="age" min="1" max="29" required>
+<br><br>
+Mobile Number:
+<input type="number" id="Mobile Number:" required>
+<br><br>
+
+Date of Birth:
+<input type="date" id="dob" required>
+<br><br>
+
+Gender:
+<select required>
+    <option value="">Select</option>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+</select>
+<br><br>
+
+Department:
+<select required>
+    <option value="">Select</option>
+    <option>CSE</option>
+    <option>IT</option>
+    <option>ECE</option>
+    <option>EEE</option>
+</select>
+<br><br>
+
+Event:
+<select required>
+    <option value="">Select</option>
+    <option>Quiz</option>
+    <option>Paper Presentation</option>
+    <option>Coding</option>
+    <option>Web Designing</option>
+</select>
+<br><br>
+
+Address:
+<textarea required></textarea>
+<br><br>
+
+<input type="submit" value="Submit Registration">
+</div>
+<p id="successMessage" style="color: green;"></p>
+
+</form>
+
+</body>
+</html>

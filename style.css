@@ -1,0 +1,31 @@
+body {
+    min-height: 100vh;
+    background: url("./sathyabama.webp") center/cover fixed no-repeat;
+    color:rgb(3,3,3);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo {
+    width: 200px;
+    max-width:200px;
+    height: auto;
+    /* border-radius:30%; */
+}
+
+h1 {
+    color: yellow;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
